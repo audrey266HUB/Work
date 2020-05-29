@@ -1,7 +1,0 @@
-{
-  "name": "work",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
