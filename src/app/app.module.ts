@@ -12,6 +12,11 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule                } from '@angular/fire';
 import {AngularFireAuthModule} from "@angular/fire/auth";
+import { FileChooser } from '@ionic-native/file-chooser/ngx';
+import { File } from '@ionic-native/file/ngx';
+import { FileTransfer } from '@ionic-native/file-transfer/ngx';
+import { FilePath } from '@ionic-native/file-path/ngx';
+
 
 import { config } from './firebase';
 
@@ -28,12 +33,16 @@ import { config } from './firebase';
   IonicModule.forRoot(),
   AngularFireModule.initializeApp(config),
   AngularFireAuthModule,
-  AppRoutingModule
+  AppRoutingModule,
   ],
   
   providers: [
     StatusBar,
     SplashScreen,
+    FileChooser,
+    File,
+    FilePath,
+    FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
