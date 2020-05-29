@@ -6,6 +6,13 @@
           "work-c18db"
         ]
       }
+    },
+    "ionic-1f0b0": {
+      "hosting": {
+        "app": [
+          "ionic-1f0b0"
+        ]
+      }
     }
   }
 }
