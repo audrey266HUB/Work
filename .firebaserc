@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "work-c18db": {
+      "hosting": {
+        "app": [
+          "work-c18db"
+        ]
+      }
+    }
+  }
+}
