@@ -1,12 +1,11 @@
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-back-button></ion-back-button>
-  </ion-buttons>
-  <ion-title>Inscription</ion-title>
-</ion-toolbar>
-
 <ion-content>
   
+  <div class="padding">
+    <h1 class="ion-text-center">Workmaps</h1>
+    <div class="logo">
+      <img src="../../assets/workmaps.png"  alt="logo">
+    </div>
+    <h2 class="ion-text-center">Inscription :</h2>
     <ion-item>
     <ion-label position="floating">email</ion-label>
     <ion-input [(ngModel)]="email" ></ion-input>
@@ -17,9 +16,8 @@
       <ion-input type="password" [(ngModel)]="password" ></ion-input>
     </ion-item>
 
-    <ion-button (click)="register()">
-     S'inscrire
-    </ion-button>
-    <ion-button (click)="back()">back</ion-button>
+    <ion-button (click)="register()" shape="round" expand="block">S'inscrire</ion-button>
+    <ion-button (click)="back()">Retour</ion-button>
+  </div>
  
 </ion-content>

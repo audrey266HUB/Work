@@ -5,7 +5,7 @@
       <img src="../../assets/workmaps.png"  alt="logo">
     </div>
     <br>
-    <ion-item cl>
+    <ion-item>
       <ion-label>Email</ion-label>
       <ion-input  placeholder="Adresse email" type="email" [(ngModel)]="dataUser.email" ></ion-input>
     </ion-item>
@@ -22,12 +22,14 @@
 
     <ion-button (click)="login()" fill="outline" shape="round" expand="block">Connexion</ion-button>
     <br>
-    <ion-button class="inscription"  shape="round" expand="block">Inscription</ion-button>
+    <ion-button class="inscription"  shape="round" expand="block"><a routerLink="/register">Inscription</a></ion-button>
 
   </div>
-
+<!-- 
   <div *ngIf="connected">
     <h2>Vous êtes connecté</h2>
-    <ion-button (click)="logout()" color="danger" expand="block" >Déconnexion</ion-button>
   </div>
+ -->
+ <ion-button *ngIf="connected" (click)="logout()" color="danger" expand="block"  >Déconnexion</ion-button>
+
 </ion-content>

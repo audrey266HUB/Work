@@ -15,9 +15,7 @@ export class HomePageComponent implements OnInit {
   };
   connected: boolean;
 
-  constructor(
-    public router: Router, public afAuth: AngularFireAuth
-    ) {
+  constructor(public router: Router, public afAuth: AngularFireAuth ) {
       this.afAuth.authState.subscribe(auth =>{
         if(!auth) {
           console.log("vous n'etes pas connecté");
@@ -35,6 +33,7 @@ export class HomePageComponent implements OnInit {
         email: '',
         password: ''
       };
+      this.router.navigate(['map']);
     }
 
     logout() {
