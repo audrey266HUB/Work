@@ -49,7 +49,7 @@ export class ContactComponent implements OnInit {
         });
         toast.present();
       },
-      (error: any) => console.error('La sauvegarde du conatct a échoué.', error)
+      (error: any) => console.error('La sauvegarde du contact a échoué.', error)
     );
   }
   ngOnInit() {}
