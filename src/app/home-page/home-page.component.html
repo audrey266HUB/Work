@@ -1,32 +1,29 @@
 <ion-content>
-      <h1 class="ion-text-center"style="padding-top :3em">Workmaps</h1>
+  <div class="padding">
+    <h1 class="ion-text-center">Workmaps</h1>
+    <div class="logo">
+      <img src="../../assets/workmaps.png"  alt="logo">
+    </div>
+    <br>
+    <ion-item cl>
+      <ion-label>Email</ion-label>
+      <ion-input  placeholder="Adresse email" type="email"></ion-input>
+    </ion-item>
 
-      <div style="padding-top: 10em;">
+    <ion-item>
+      <ion-label>Mot de passe</ion-label>
+      <ion-input  placeholder="Mot de passe" type="password"></ion-input>
+    </ion-item>
 
-        <ion-item>
-          <ion-label position="floating">email</ion-label>
-          <ion-input [(ngModel)]="email" ></ion-input>
-        </ion-item>
-      
-        <ion-item >
-          <ion-label position="floating">password</ion-label>
-          <ion-input type="password" [(ngModel)]="password" ></ion-input>
-        </ion-item>
-      
-           <ion-button lass="fond"expand="full"  color="warning" (click)="login()">Connexion</ion-button>
-       
+    <ion-item lines="none">
+      <ion-button fill="clear" slot="end">mot de place oublié ?</ion-button>
+    </ion-item>
+    <br><br>
 
-
-  
-
-
-  
-</div>
-
-
-
+    <ion-button fill="outline" shape="round" expand="block">Connexion</ion-button>
+    <br>
+    <ion-button class="inscription"  shape="round" expand="block">Inscription</ion-button>
 
 
-
-
+  </div>
 </ion-content>
