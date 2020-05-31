@@ -1,5 +1,5 @@
 <ion-content>
-  <div class="padding">
+  <div *ngIf="!connected" class="padding">
     <h1 class="ion-text-center">Workmaps</h1>
     <div class="logo">
       <img src="../../assets/workmaps.png"  alt="logo">
@@ -7,12 +7,12 @@
     <br>
     <ion-item cl>
       <ion-label>Email</ion-label>
-      <ion-input  placeholder="Adresse email" type="email"></ion-input>
+      <ion-input  placeholder="Adresse email" type="email" [(ngModel)]="dataUser.email" ></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Mot de passe</ion-label>
-      <ion-input  placeholder="Mot de passe" type="password"></ion-input>
+      <ion-input  placeholder="Mot de passe" type="password" [(ngModel)]="dataUser.password" ></ion-input>
     </ion-item>
 
     <ion-item lines="none">
@@ -20,10 +20,14 @@
     </ion-item>
     <br><br>
 
-    <ion-button fill="outline" shape="round" expand="block">Connexion</ion-button>
+    <ion-button (click)="login()" fill="outline" shape="round" expand="block">Connexion</ion-button>
     <br>
     <ion-button class="inscription"  shape="round" expand="block">Inscription</ion-button>
 
+  </div>
 
+  <div *ngIf="connected">
+    <h2>Vous êtes connecté</h2>
+    <ion-button (click)="logout()" color="danger" expand="block" >Déconnexion</ion-button>
   </div>
 </ion-content>

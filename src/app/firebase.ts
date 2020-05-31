@@ -1,9 +1,10 @@
 export const config = { 
-    apiKey: "AIzaSyBbS08gpr1Wd4Xo9V8sffataEX4uJXvZF4",
-    authDomain: "work-c18db.firebaseapp.com",
-    databaseURL: "https://work-c18db.firebaseio.com",
-    projectId: "work-c18db",
-    storageBucket: "work-c18db.appspot.com",
-    messagingSenderId: "74732171020",
-    appId: "1:74732171020:web:96a290d8556a741fc5e329"
+  apiKey: "AIzaSyDAK8FZUvggvCJpmyGyT_V_zW-msBANwIQ",
+  authDomain: "workmaps-e7450.firebaseapp.com",
+  databaseURL: "https://workmaps-e7450.firebaseio.com",
+  projectId: "workmaps-e7450",
+  storageBucket: "workmaps-e7450.appspot.com",
+  messagingSenderId: "781357033769",
+  appId: "1:781357033769:web:58620b3f3833e151736f38",
+  measurementId: "G-5MCDF7ESBB"
   }
